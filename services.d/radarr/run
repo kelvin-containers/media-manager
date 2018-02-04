@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv sh
+
+mkdir -p /config/radarr
+
+rm -f /config/radarr/nzbdrone.pid
+
+exec mono /opt/Radarr/Radarr.exe -nobrowser -data=/config/radarr
